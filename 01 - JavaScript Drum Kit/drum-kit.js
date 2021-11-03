@@ -7,6 +7,7 @@ function playSound(KeyboardEvent){
         return;// stop function from running if no key associated. 
     } 
     audio.currentTime = 0; //restart from begin; can play with out needing to finish transition 
+    console.log(KeyboardEvent); 
     audio.play(); 
     
     key.classList.add('playing');     
